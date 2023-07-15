@@ -43,3 +43,8 @@ window.addEventListener("scroll", ()=>{
     phones[1].style.transform = `translateX(calc(700vh - ${offsetY}px))`
 
 })
+
+
+document.querySelector(".netflixClone").onclick = function () {
+  location.href = "https://resilient-rabanadas-53baf0.netlify.app/";
+};

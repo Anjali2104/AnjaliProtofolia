@@ -145,6 +145,10 @@
 .projectBTN:hover .projectBTN::after{
     transform: translateX(100%);   
 } */
+a{
+    text-decoration: none;
+    color: #555;
+}
 .projectButton {
     padding: 10px 20px;
     background-color: transparent;
