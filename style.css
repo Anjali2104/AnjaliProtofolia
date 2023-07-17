@@ -3,10 +3,6 @@
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-
-/* -------------------------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------------------------- */
 .container{
     background-color: #111;
     overflow: hidden;
@@ -149,10 +145,6 @@
 .projectBTN:hover .projectBTN::after{
     transform: translateX(100%);   
 } */
-a{
-    text-decoration: none;
-    color: #555;
-}
 .projectButton {
     padding: 10px 20px;
     background-color: transparent;
@@ -282,12 +274,6 @@ a{
         color: #555;
         font-size: 30px;
         text-align: center;
-      
-    }
-    .githubSm img{
-        height: 200px;
-        width:200px;
-       
     }
     .salute{
         display: flex;
@@ -295,7 +281,7 @@ a{
         align-items: center;
     }
     .SaluteImg{
-        width:40vh;
+        width:30vh;
     }
     .saluteTextContainer{
         margin-left: 0;
@@ -304,4 +290,3 @@ a{
         text-align: center;
     }
 }
-
