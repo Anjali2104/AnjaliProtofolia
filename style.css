@@ -278,6 +278,12 @@ a{
         color: #555;
         font-size: 30px;
         text-align: center;
+      
+    }
+    .githubSm img{
+        height: 200px;
+        width:200px;
+       
     }
     .salute{
         display: flex;
@@ -285,7 +291,7 @@ a{
         align-items: center;
     }
     .SaluteImg{
-        width:30vh;
+        width:40vh;
     }
     .saluteTextContainer{
         margin-left: 0;
