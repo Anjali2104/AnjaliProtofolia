@@ -13,8 +13,22 @@
 <body>
     <!-- MAIN CONTAINER -->
     <div class="container">
+        <!------------------------------- NAV --------------------------------------------->
+        <nav>
+            <!-- <img src="./images/logo.png" alt="logo" class="logo"> -->
+            <i class="fa-solid fa-a fa-xl" class="logo"></i>
+            <ul id="side-menu">
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid res fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid res fa-bars" onclick="openmenu()"></i>
+        </nav>
         <!-- Introduction -->
-        <div class="intro">
+        <div id="intro">
             <div class="salute">
                 <div class="saluteImgContainer">
                     <img src="./images/—Pngtree—woman working with laptop_8952120.png" alt="" class="SaluteImg">
@@ -33,8 +47,64 @@
                 <h2 class="jobTitle">and Designer</h2>
             </div>
         </div>
+        <!-- -----------------------------------------------------SKills -------------------------------------------->
+        <div id="about">
+            <div class="skills">
+                <!-- <div class="about-col-1">
+                    <img src="./images/aboutIMG.jpg" alt="Pc-screen">
+                </div> -->
+                <div class="about-col-2">
+                    <h1 class="sub-title identity">About me</h1>
+                    <p>A highly organized and hard-working individual looking for a responsible position to gain practical experience. Experienced Member with a demonstrated
+                         history of working in non-profit organization management industry.</p>
+                         <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('programming-programming')">Programming Languages</p>
+                            <p class="tab-links" onclick="opentab('web-technology')">Web Technologies</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('profiles')">Profiles</p>
+                        </div>
+                        <div class="tab-contents active-tab" id='programming-programming'>
+                            <ul>
+                                <li><span>Data Structures and Algorihtm</span> <br></li>
+                                <li><span>C++</span><br> Web App development</li>
+                                <li><span>JavaSCript</span><br> Building Android/iOS Apps</li>
+                                <li><span>OOPs</span><br> Building Android/iOS Apps</li>
+                                <li><span>OOPs</span><br> Building Android/iOS Apps</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="tab-contents" id="web-technology">
+                            <ul>
+                                <li><span>HTML5</span> <br>UI/UX Design Training at ET Institute</li>
+                                <li><span>CSS</span><br> MBA from MIT Bangalore</li>
+                                <li><span>MERN</span><br> MBA from ISM Bangalore</li>
+                                <li><span>ReactJS</span><br> MBA from ISM Bangalore</li>
+                                <li><span>ExpressJs</span><br> MBA from ISM Bangalore</li>
+                                <li><span>NodeJS</span><br> MBA from ISM Bangalore</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019-2023</span> <br>B.Tech(ECE)</li>
+                                <li><span>2018-2019</span><br> Intermediate</li>
+                                <li><span>2015-2016</span><br> HighSchool</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="profiles">
+                            <ul>
+                                <li><span>Codechef</span> <br><a href="https://www.codechef.com/users/anjali_0421" target="_blank">anjali_0421</a></li>
+                                <li><span>Leetcode</span><br> <a href="https://leetcode.com/anjaliu949/" target="_blank">anjaliu949</a></li>
+                                <li><span>Coding ninjas</span><br><a href="https://www.codingninjas.com/studio/profile/f32bdcbd-a5e7-46f9-b6a6-390b0bd029df" target="_blank">Shraddha</a> </li>
+                                <li><span>GFG</span><br><a href="https://auth.geeksforgeeks.org/user/anjaliu949/practice" target="_blank">anjaliu949</a></li>
+                                <li><span>HackerRank</span><br><a href="https://www.hackerrank.com/anjaliu949?hr_r=1" target="_blank">anjaliu949</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------------- -->
         <!-- Projects -->
-        <div class="projects">
+        <div id="projects">
            <h1 class="projectTitle">Here are some of my projects</h1>
            <!-- PROJECT 1 -->
            <div class="project">
@@ -126,7 +196,7 @@
             </div>
         </div>
         <!----------------contact page------------------------------------------------------------------ -->
-        <div class="contact">
+        <div id="contact">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact me</h1>

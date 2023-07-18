@@ -7,6 +7,48 @@
     background-color: #111;
     overflow: hidden;
 }
+/* ---------------------------------------------NAV---------------------------------------------------- */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 10%;
+}
+nav i{
+    width: 140px;
+    color: #ddeae3;
+    font-size: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+ position: relative;
+ text-decoration: none;
+ color: #ddeae3;
+ font-size: 18px;
+ transition: 0.5s ease;
+}
+nav ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background:#28838f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav .fa-solid.res{
+    display: none;
+}
+/* ----------------------------------------------INTRO----------------------------------------------------- */
 .salute{
     height: 100vh;
     display: flex;
@@ -58,7 +100,7 @@
     line-height: 100vh;
     cursor: default;
 }
-.projects{
+#projects{
     display: flex;
     flex-direction: column;
     gap:30vh;
@@ -245,7 +287,7 @@
 
 }
 /* -------------------------------------------------Contact------------------------------------- */
-.contact{
+#contact{
     height: 100vh;
     width: 100vw;
    margin-top: 20px;
@@ -367,7 +409,7 @@ form .btn2{
 /* ------------------------------------------------------------------------------------------------- */
 @media screen  and (max-width:1024px){
    
-    .projects{
+    #projects{
         padding: 0 30px;
         text-align: center;
     }
@@ -412,4 +454,73 @@ form .btn2{
     .greetings{
         text-align: center;
     }
+}
+/* ----------------------------------About----------------------------------------------------------- */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.skills{
+    padding: 10px 10%;
+} 
+.identity{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* .about-col-1{
+    flex-basis: 35%;
+   }
+.about-col-1 img{
+     width: 100%;
+     border-radius: 15px;
+} */
+/* .about-col-2{
+    flex-basis: 60%;
+} */
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+    justify-content: space-between;
+}
+.tab-links{
+    text-align: center;
+    font-weight: 500;
+    margin-right: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#28838f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents  ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #bbd5c7;
+    font-size: 14px;
+    font-weight: 600;
+   
+}
+.tab-contents ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color:#28838f;   
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }

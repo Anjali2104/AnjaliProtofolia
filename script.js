@@ -37,10 +37,10 @@ window.addEventListener("scroll", ()=>{
     jobTitleContainers[1].style.backgroundPositionY = `${-offsetY*0.5}px`
     jobTitles[0].style.transform = `translateX(calc(200vh - ${offsetY}px))`
     jobTitles[1].style.transform = `translateX(calc(-300vh + ${offsetY}px))`
-    projectTitle.style.transform = `translateY(calc(400vh - ${offsetY}px))`
-    phones[0].style.transform = `translateX(calc(450vh - ${offsetY}px))`
-    laptop[0].style.transform = `translateX(calc(570vh - ${offsetY}px))`
-    phones[1].style.transform = `translateX(calc(700vh - ${offsetY}px))`
+    projectTitle.style.transform = `translateY(calc(500vh - ${offsetY}px))` //400
+    phones[0].style.transform = `translateX(calc(560vh - ${offsetY}px))` //450
+    laptop[0].style.transform = `translateX(calc(660vh - ${offsetY}px))` //570
+    phones[1].style.transform = `translateX(calc(800vh - ${offsetY}px))` //700
 
 })
 // FORM
@@ -59,3 +59,23 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
+// -----------------------------------------ABout-----------------------------------------------------------------
+var tablinks = document.getElementsByClassName("tab-links")
+var tabcontents = document.getElementsByClassName("tab-contents")
+const opentab = (tabname) =>{
+ for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+ }
+ for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+ }
+  event.currentTarget.classList.add('active-link')
+  document.getElementById(tabname).classList.add('active-tab')
+}
+const sidemenu = document.getElementById('side-menu')
+const openmenu = () =>{
+  sidemenu.style.right="0";
+}
+const closemenu = () =>{
+   sidemenu.style.right = "-200px"
+}
